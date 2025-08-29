@@ -34,8 +34,10 @@ const InitializeConnection =async()=>
     await Promise.all([main(),redisClient.connect()]);
     console.log("DB connected");
 
+    const PORT = process.env.PORT || 5000;
+
     app.listen(process.env.PORT, () => {
-      console.log("server listening at port number: " + process.env.PORT);
+      console.log("server listening at port number: " + PORT);
      });
    }
    catch(err)
