@@ -36,7 +36,7 @@ const InitializeConnection =async()=>
 
     const PORT = process.env.PORT || 5000;
 
-    app.listen(process.env.PORT, () => {
+    app.listen(PORT, () => {
       console.log("server listening at port number: " + PORT);
      });
    }
