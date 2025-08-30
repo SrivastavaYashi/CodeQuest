@@ -14,7 +14,8 @@ const videoRouter = require('./routes/videoCreator');
 
 
 app.use(cors({
-  origin:'http://localhost:5173',
+  // origin:'http://localhost:5173',
+  origin: 'https://codequest-frontend-fi6f.onrender.com', 
   credentials:true
 }))
 
