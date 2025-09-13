@@ -43,12 +43,14 @@ return await fetchData();
 
 }
 
-const waiting = async (timer)=>
-{
-    setTimeout(() => {
-     return 1;
-    },timer);
-}
+// const waiting = async (timer)=>
+// {
+//     setTimeout(() => {
+//      return 1;
+//     },timer);
+// }
+const waiting = (ms) => new Promise(resolve => setTimeout(resolve, ms));
+
 
 const submitToken = async(resultToken)=>
 {
