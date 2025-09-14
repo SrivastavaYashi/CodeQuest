@@ -103,6 +103,7 @@ const submitCode =async(req,res)=>
   }
   catch(err)
   {
+     console.error("Submit Error:", err.response ? err.response.data : err.message);
      res.status(500).send('Internal Server Error '+ err);
   }
 }
