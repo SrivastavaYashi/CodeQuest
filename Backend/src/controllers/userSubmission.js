@@ -69,7 +69,7 @@ const submitCode =async(req,res)=>
             memory = Math.max(memory,test.memory);
          }
          else{
-            if(status.id===4)
+            if(test.status_id===4)
             {
                 status = 'error'
                 errorMessage = test.stderr
